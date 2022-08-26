@@ -107,7 +107,7 @@ function togglePlay() {
 	if(song.isPlaying()){
 		song.pause();
 	} else {
-		song.play();
+		song.loop();
 		//The number of petals increase when the song is playing, the maximum number is 9
 		nodes += 1;
 		if (nodes > 9) nodes = 2;
