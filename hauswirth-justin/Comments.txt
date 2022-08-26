@@ -1,0 +1,13 @@
+
+My sketch is a mini ray based acoustic simulation meant to be like a landing page that fits on both desktop and phone screens.
+The user should enter the page and click to produce an impulse of acoustic rays that bounce around the screen and interact with a variety of simualted acoustic treatments.
+After a certain amount of clicks, the sketch will cycle to a new type of acoustic treatment.  
+
+The first treatment on loading the sketch will be randomly picked from one of the three first cases, as they are more standard/ common treatments (ones like perlin noise are just for fun and would not be worth being the first one seen)
+The design should fit both desktop and phone screens by changing the text font size when the screen is less than cetain widths, and by using relative values for box generation.
+
+Chose a font called Momcake Bold, as it has lots of straight vertical and horizontal lines, which assists in the effect of having the rays bounce of the title text using only a bounding box.
+Chose to have the main title text have a collision box so rays bounce off it, which makes it stick out a bit more. Whereas other text, such as the case or prompt have no collision and low alpha so attention is not drawn to these.
+On entering the sketch a short prompt to "click anywhere" is shown to entice the user to explore this simulation on their own.
+
+Chose to use a greyscale colourscheme as it is simple and elegant, just like the daily minimal sketches that were so often used as examples in this course. 
