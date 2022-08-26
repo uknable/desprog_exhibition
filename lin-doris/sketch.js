@@ -312,3 +312,7 @@ class Particle {
 		ellipse(this.location.x, this.location.y, this.radius * 50, this.radius * 50);
 	}
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight)
+}

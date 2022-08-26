@@ -86,3 +86,6 @@ function mousePressed(){ //Creates an impusle when clicked
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight)
+}

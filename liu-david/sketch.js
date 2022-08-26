@@ -116,3 +116,7 @@ function draw() {
     fracPlanets.pop().fracture();
   }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight)
+}
