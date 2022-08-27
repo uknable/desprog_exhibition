@@ -105,7 +105,7 @@ function draw() {
 //Play the sound when mouse is clicked
 function togglePlay() {
 	if(song.isPlaying()){
-		song.pause();
+		// song.pause();
 	} else {
 		song.loop();
 		//The number of petals increase when the song is playing, the maximum number is 9
