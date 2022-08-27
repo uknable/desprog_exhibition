@@ -46,13 +46,13 @@ function draw() {
   //Add background color
 	background(0, 0, 0, 10);
 
-	//Write the instruction to users
-	push();
-	fill(255);
-	noStroke();
-	textSize(15);
-	text("Click the page to control the playing sound.", width * 0.08, height * 0.08);
-	pop();
+	// //Write the instruction to users
+	// push();
+	// fill(255);
+	// noStroke();
+	// textSize(15);
+	// text("Click the page to control the playing sound.", width * 0.08, height * 0.08);
+	// pop();
 
   //Reading the sound spectrum
 	spectrum = fft.analyze();
