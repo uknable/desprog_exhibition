@@ -5,3 +5,11 @@ html, body {
 canvas {
   display: block;
 }
+
+
+html {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-x: hidden; /* for Chrome */
+  overflow-y: hidden; /* for Chrome */
+}

@@ -1,0 +1,401 @@
+:root {
+    --bgColor: #FFF9F5;
+    --buttonColor: #2352E5;
+    --shadColor: #c9c9c9;
+
+    --headerVertPadding: .5em;
+    --paragraphSpace: 1.3em;
+    --cardSpacing: 5em;
+
+    --sidePadding: 0;
+    --borderRadius: 0.2em;
+
+    --fontSize: 1.1em;
+    --projectTitleSize: 3em;
+    --blurbSize: 1.5em;
+    --sectionTitleSize: 2em;
+}
+
+@font-face {
+    font-family: "NunitoSans-Bold";
+    src: url("fonts/NunitoSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito-Light";
+    src: url("fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+    font-family: "Nunito-Regular";
+    src: url("fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito-Bold";
+    src: url("fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito-ExtraBold";
+    src: url("fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoMono-Regular";
+    src: url("fonts/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather-Bold";
+    src: url("fonts/Merriweather-Bold.ttf");
+}
+
+html {
+    background-color: var(--bgColor);
+}
+
+body {
+    font-family: "Nunito-Regular", sans-serif;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: var(--fontSize);
+}
+nav a, nav li {
+    font-family: "Nunito-Regular", sans-serif;
+}   
+
+nav a:hover {
+    border-bottom: 3px solid black;
+}
+
+nav {
+    /* margin-bottom: calc(3 * var(--paragraphSpace)); */
+}
+
+header nav ul {
+    background-color: white;
+    padding: var(--headerVertPadding) var(--sidePadding);
+    display: flex;
+}
+
+
+
+.banner-image {
+    /* height: 200px; */
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info-brief {
+    width: 60%;
+    padding: 1em;
+}
+
+.project-info-brief p {
+    font-size: 1.3em;
+}
+
+.project-info-section {
+    padding: 0 2em;
+    width: auto;
+}
+
+.project-info-title {
+    font-size: calc(var(--sectionTitleSize) * 0.75);
+}
+
+.project-title {
+    /* padding: var(--sidePadding) 0; */
+    font-size: var(--projectTitleSize);
+}
+
+.section-title {
+    font-size: var(--sectionTitleSize);
+}
+
+h1 {
+    font-family: "Merriweather-Bold", sans-serif;
+    color: #313131;
+}
+
+.blurb {
+    text-align: center;
+    font-family: "Nunito-Light", serif;
+    font-size: var(--blurbSize);
+    padding: 0 5em;
+}
+
+
+
+ul li {
+    flex-grow: 20;
+    text-align: right;
+    padding-right: 2em;
+    font-weight: bold;
+}
+
+ul li:first-child {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: normal;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+.bullet-points {
+    list-style-type: circle;
+}
+
+.bullet-points li {
+    text-align: left;
+    margin-top: .5em;
+    margin-left: 3em;
+}
+
+main {
+    padding: 0 var(--sidePadding);
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: var(--paragraphSpace);
+}
+
+main p {
+    margin-bottom: var(--paragraphSpace);
+}
+
+article {
+    text-align: left;
+}
+
+.bio-container {
+    margin: var(--cardSpacing) 0;
+}
+
+.bio-container p {
+    font-size: 2em;
+    text-align: left;
+}
+
+.project-cards:first-child {
+    margin: var(--cardSpacing) 0;
+}
+
+.project-cards {
+    text-align: center;
+    margin-bottom: var(--cardSpacing);
+}
+
+.project-cards img {
+    width: 25em;
+    margin: 1em 2em;
+    border-radius: var(--borderRadius);
+    transition: 0.2s ease-in-out;
+    box-shadow: 2px 2px 4px var(--shadColor);
+}
+
+.project-cards img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 white;
+}
+
+.card-text {
+    width: 25em;
+    margin-top: 1em;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.card-text a, section a {
+    font-family: "NunitoSans-Bold", sans-serif;
+    text-decoration: none;
+    color: var(--buttonColor);
+    transition: 0.1s ease-in-out;
+}
+
+
+.card-text a:hover, section a:hover {
+    border-bottom: 3px solid var(--buttonColor);
+}
+
+.right-card {
+    text-align: right;
+}
+
+.iframe-container {
+    text-align: center;
+}
+
+.itch-frame {
+    margin-bottom: 5em;
+    background-color: white;
+}
+
+article h1 {
+    text-align: left;
+}
+
+code {
+    font-family: "RobotoMono-Regular", serif;
+    font-size: 0.8em;
+    background-color: white;
+    display: block;
+    border-radius: var(--borderRadius);
+    margin: var(--paragraphSpace) 0;
+    padding: var(--paragraphSpace);
+}
+
+figure {
+    text-align: center;
+    margin: var(--paragraphSpace) 0;
+}
+
+figure img {
+    width: 100%;
+    margin-top: var(--paragraphSpace);
+    border-radius: var(--borderRadius);
+    box-shadow: 2px 2px 4px var(--shadColor);
+    transition: 0.2s ease-in-out;
+}
+
+figure img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 var(--shadColor);
+}
+
+figure.sidebyside img {
+    width: 40%;
+}
+
+#tiles-wireflow:hover {
+    transform: scale(1.7);
+}
+
+figure figcaption {
+    font-size: 0.9em;
+    padding: calc(0.1 * var(--paragraphSpace)) 0 var(--paragraphSpace) 0;
+}
+
+b {
+    font-family: "Nunito-Bold", serif;
+}
+
+code i {
+    font-style: italic;
+    color: grey;
+}
+
+
+
+section {
+    margin-bottom: 10em;
+}
+
+footer {
+    padding: calc(2 * var(--headerVertPadding)) 0;
+}
+
+.active {
+    border-bottom: 3px solid black;
+}
+
+.video-container {
+    text-align: center;
+    padding: calc(0.1 * var(--paragraphSpace)) 0 var(--paragraphSpace) 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.video-container p {
+    margin-bottom: 0;
+    padding: 1em 1.5em;
+}
+
+video {
+    width: 60%;
+    box-shadow: 2px 2px 4px var(--shadColor);
+    border-radius: var(--borderRadius);
+    transition: 0.2s ease-in-out;
+}
+
+video:hover {
+    transform: scale(1.1);
+    
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    
+    :root {
+        --sidePadding: 10%;
+
+        --projectTitleSize: 2.5em;
+        --blurbSize: 1.2em;
+        --sectionTitleSize: 1.5em;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .bio-container p {
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .banner-image {
+        /* height: 200px; */
+        width: 600px;
+    }
+
+    .project-cards img {
+        display: inline-block;
+        width: 90%;
+        margin: 1em 0;
+    }
+
+    .project-title {
+        top: 70px;
+    }
+
+    .card-text {
+        display: inline-block;
+        width: 90%;
+    }
+
+    section {
+        margin-bottom: 2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    nav {
+        font-size: 0.9em;
+    }
+
+    .video-container {
+        flex-direction: column;
+    }
+
+    video {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
