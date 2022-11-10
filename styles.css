@@ -10,7 +10,7 @@
   --sidePadding: 1em;
   --borderRadius: 0.2em;
 
-  --fontSize: 1.1em;
+  --fontSize: 1.5em;
   --projectTitleSize: 3em;
   --blurbSize: 1.5em;
   --sectionTitleSize: 2em;
@@ -126,6 +126,7 @@ header nav ul {
 h1 {
   font-family: "Merriweather-Bold", sans-serif;
   color: #313131;
+  font-size: var(--fontSize)
 }
 
 .blurb {
@@ -144,6 +145,7 @@ ul li:first-child {
 }
 
 ul li {
+  font-size: var(--fontSize);
   flex-grow: 20;
   text-align: right;
   padding-right: 2em;
