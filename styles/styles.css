@@ -16,41 +16,6 @@
   --sectionTitleSize: 2em;
 }
 
-@font-face {
-  font-family: "NunitoSans-Bold";
-  src: url("fonts/NunitoSans-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Nunito-Light";
-  src: url("fonts/Nunito-Light.ttf");
-}
-
-@font-face {
-  font-family: "Nunito-Regular";
-  src: url("fonts/Nunito-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Nunito-Bold";
-  src: url("fonts/Nunito-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Nunito-ExtraBold";
-  src: url("fonts/Nunito-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: "RobotoMono-Regular";
-  src: url("fonts/RobotoMono-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Merriweather-Bold";
-  src: url("fonts/Merriweather-Bold.ttf");
-}
-
 html {
   background-color: var(--bgColor);
 }
@@ -356,8 +321,6 @@ video:hover {
 @media screen and (max-width: 600px) {
 
   :root {
-    --sidePadding: 10%;
-
     --projectTitleSize: 2.5em;
     --blurbSize: 1.2em;
     --sectionTitleSize: 1.5em;
